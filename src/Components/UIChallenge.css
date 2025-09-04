@@ -106,3 +106,100 @@ body{
 }
 
 
+/* Media queries - Responsiveness */
+/* for devises with a width between 350 and 600 pixels*/
+@media (min-width: 375px) and (max-width: 600px) {
+  body {
+    font-size: 12px;/* adjust font size for small screens */
+    padding: 10px;
+    text-align: center;
+  }
+
+  .price-grid {
+    width: 100%;/* full width of screen */
+    max-width: 100%;/* prevent overflowing */
+    height: auto;/* let it grow with content */
+    display: grid;
+    grid-template-columns: 1fr; /* single column */
+    grid-gap: 0.5rem;/* add spacing between items */
+    padding: rem;
+  }
+
+  .intro, .subscription, .why-us, .price {
+    grid-column: 1;/* ensure all items span full width */
+  }
+
+  .intro h1 {
+    font-size: 20px;
+  }
+
+  .subscription h2 {
+    font-size: 16px;
+  }
+
+  .price .p1 {
+    font-size: 24px;
+  }
+
+  .signup {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  .why-us h2 {
+    font-size: 16px;
+  }
+
+  .why-us li {
+    line-height: 20px;
+  }
+}
+
+/* Tablet / small screens - 768px */
+@media(min-width: 768px){
+  .price-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Desktop - 1440px */
+@media(min-width: 1440px){
+  body {
+    font-size: 18px;/* larger font for bigger screens */
+  }
+
+  .price-grid {
+    max-width: 1000px;/* increase wrapper width */
+    height: 600px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .intro h1 {
+    font-size: 32px;
+  }
+
+  .subscription h2 {
+    font-size: 20px;
+  }
+
+  .price .p1 {
+    font-size: 32px;
+  }
+
+  .signup {
+    font-size: 1.2rem;
+    padding: 1.2rem;
+  }
+
+  .why-us h2 {
+    font-size: 20px;
+  }
+
+  .why-us li {
+    line-height: 28px;
+  }
+}
+
+
+
+
