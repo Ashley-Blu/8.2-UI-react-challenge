@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react";// imports React library - needed since we using JSX(HTML-like syntax in TS)
 import "./UIChallenge.module.css";
 
 // UIChallenge is a React component, hence React.Functional Component declaration
@@ -38,8 +38,13 @@ const UIChallenge: React.FC = () => {
             <li>New videos every week</li>
         </ul>
       </section>
+
+      <footer className="footer">
+        <p>Bootcamp 2023 by <a href="https://mlab.co.za/">Codetribe</a>. Developed by <a href="https://github.com/Ashley-Blu/3.10-my-portfolio">Matsekoleng Ashley</a>.</p>
+      </footer>
     </main>
   );
 };
 
+// ecports the UIChallenge component so that it can be imported into App.tsx
 export default UIChallenge;
