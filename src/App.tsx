@@ -1,8 +1,12 @@
-import React from "react";
 import "./App.css";
+import {UIChallenge} from "./Components/UIChallenge.tsx";
 
 function App() {
-  return 
+  return (
+    <>
+    <UIChallenge/>
+    </>
+  );
 }
 
 export default App;
