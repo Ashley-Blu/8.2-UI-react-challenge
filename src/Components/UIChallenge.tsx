@@ -1,10 +1,11 @@
 import React from "react";// imports React library - needed since we using JSX(HTML-like syntax in TS)
-import "./UIChallenge.module.css";
+import "./UIChallenge.css";
 
 // UIChallenge is a React component, hence React.Functional Component declaration
 const UIChallenge: React.FC = () => {
   return (
-    <main className="price-grid">
+  <>
+  <main className="price-grid">
       <section className="intro">
         <h1>Join our community</h1>
         <p className="highlight">30-day, hassle-free money back guarantee</p>
@@ -19,7 +20,7 @@ const UIChallenge: React.FC = () => {
         <h2>Monthly Subscription</h2>
         <p className="price">
             {/* to specialize the style for the price */}
-            <span>$29</span> per month 
+            <span className="p1">$29</span> <span className="p2">per month</span> 
         </p>
         <p className="note">Full access for less than $1 a day</p>
 
@@ -38,11 +39,12 @@ const UIChallenge: React.FC = () => {
             <li>New videos every week</li>
         </ul>
       </section>
+    </main>
 
-      <footer className="footer">
+    <footer className="footer">
         <p>Bootcamp 2023 by <a href="https://mlab.co.za/">Codetribe</a>. Developed by <a href="https://github.com/Ashley-Blu/3.10-my-portfolio">Matsekoleng Ashley</a>.</p>
       </footer>
-    </main>
+  </>
   );
 };
 

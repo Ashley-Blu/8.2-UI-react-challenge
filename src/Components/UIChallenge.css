@@ -1,0 +1,108 @@
+body{
+    font-family: "karla", sans-serif;
+    background-color: lightgray;
+    display: flex;/* with the help of a flexbox(display: flex)*/
+    justify-content: center;/*centers contents horizontally */
+    align-items: center;/* centers contents vertically */
+    min-height: 100vh;/* censures page takes 100% of the page*/
+    margin: 0;/* removes default browser spacing */
+}
+
+.price-grid {
+  background: white;
+  border-radius: 10px;/* gives wrapper rounded corners */
+  overflow: hidden;/* keeps rounded corners clean */
+  max-width: 600px;/* limits width of the wrapper to 900px */
+  height: 500px;
+  display: grid;/* enables grid layout */
+  grid-template-columns: 1fr 1fr;/* 2 columns with equal widths */
+}
+
+.intro{
+  grid-column: span 2;/*  */
+  padding: 2rem;
+
+    h1{
+      color: #16a6a1;
+      font-size: 25px;
+    }
+}
+
+.highlight{
+  color: #bed257;
+  font-weight: 700;/* bold */
+}
+
+.description{
+  color: hsl(218, 22%, 67%);
+}
+
+.subscription{
+  background: #2bb3b1;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  font-size: 14px;
+
+    h2{
+      font-size: 18px;
+    }
+}
+
+.price{
+  font-size: 13px;
+  font-weight: 700;
+
+    .p1{
+      font-size: 28px;
+    }
+
+    .p2{
+      opacity: 50%;
+    }
+}
+
+.signup{
+  background-color: #bfdf32;
+  border: none;
+  padding: 1rem;/* gives button more clickable area */
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;/* displays hand icon when you bover over it */
+}
+
+.signup:hover{
+  opacity: 0.9;/* when you hover, button becomes a little darker */
+}
+
+.why-us{
+  background: #4abebd;
+  color: hsl(204, 43%, 93%);
+  padding: 2rem;
+
+    h2{
+      margin-bottom: 1rem;
+      font-size: 18px;
+    }
+
+    ul{
+      list-style: none;/* removes bullets */
+      padding: 0;/* no space around contents */
+      margin: 0;/* no space around container */
+    }
+
+    li{
+      line-height: 25px;
+      color: hsl(219, 25%, 89%);
+    }
+}
+
+.footer{
+    text-align: center;
+    color: black;
+    margin-top: 50px;
+}
+
+
