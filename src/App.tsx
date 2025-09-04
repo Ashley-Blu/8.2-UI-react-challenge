@@ -1,5 +1,5 @@
 import "./App.css";
-import {UIChallenge} from "./Components/UIChallenge.tsx";
+import UIChallenge from "./Components/UIChallenge";
 
 function App() {
   return (
