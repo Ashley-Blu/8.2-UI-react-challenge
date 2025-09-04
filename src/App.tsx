@@ -1,8 +1,8 @@
-import Footer from './Components/Challenge';
-import styles from './Components/Challenge.module.css';
+import React from "react";
+import "./App.css";
 
-function App(){
-    return <div> <Footer /> </div>
+function App() {
+  return 
 }
 
 export default App;
